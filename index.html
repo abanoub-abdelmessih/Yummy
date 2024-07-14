@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Yummy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="assets/imgs/logo.png" type="image/x-icon">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-black text-white">
+    <!-- ! Start Loader -->
+    <div class="loading-screen">
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+    <!-- ! End Loader -->
+    <!-- ! Start Side Nav -->
+    <nav class="sideNav position-fixed top-0 min-vh-100 d-flex z-3">
+        <div class="nav d-flex justify-content-between flex-column bg-black text-white">
+        <main class="NavContent p-4">
+            <ul class="list-unstyled navItems overflow-hidden pointer">
+                <li class="navLinks my-3 fs-5" onclick="SearchInput()">Search</li>
+                <li class="navLinks my-3 fs-5" onclick="allCategories()">Categories</li>
+                <li class="navLinks my-3 fs-5" onclick="getArea()">Area</li>
+                <li class="navLinks my-3 fs-5" onclick="getIngredients()">Ingredients</li>
+                <li class="navLinks my-3 fs-5" onclick="contactUS()">Contact Us</li>
+            </ul>
+        </main>
+        <footer class="NavFooter p-4">
+            <ul class="list-unstyled d-flex gap-3 fs-5">
+                <li><a href="https://github.com/Abanoub-Abd-Elmessih"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/abanoub-abd-elmessih-b8a37b302/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/people/Abanoub-Abd-Elmessih/pfbid0PksDRGftrsxi9rfaDBFwyej58T8GZiEFuSznQZyz6NgHuBL3Ck9BP3ZabyMZAw6El/"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+            <p>Developed by  <br><span class="fw-bold">Abanoub Abd Elmessih</span></p>
+        </footer>
+    </div>
+        <div class="nav-header bg-white text-black d-flex justify-content-between py-4 flex-column px-2 align-items-center">
+            <img class="logo" src="assets/imgs/logo.png" alt="logo">
+            <i class="fa-solid open-close-icon fa-align-justify fa-2x pointer"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- ! End Side Nav -->
+    <div class="searchInputs" id="searchInputs">
+        <div class="container">
+            <div class="row py-5 overflow-hidden" id="searchContainer">
+
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container px-sm-5 h-100">
+            <div class="row py-5 g-4" id="rowData">
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Jquery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

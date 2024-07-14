@@ -1,0 +1,72 @@
+a{
+  color: inherit;
+}
+.pointer{
+  cursor: pointer;
+}
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  /* display: none; */
+}
+
+.loading-screen .fa-spinner {
+  font-size: 3em;
+}
+
+/* Start Side Nav */
+.logo{
+  width: 50px;
+}
+.nav{
+  width: 0;
+  overflow: hidden;
+}
+.navItems li {
+  opacity: 0;
+  top: 20px;
+  position: relative;
+  transition: opacity 0.3s ease, top 0.3s ease;
+}
+.NavFooter {
+  display: none;
+  width: 100%;
+  color: white;
+}
+/* End Side Nav */
+/* Start search */
+.searchLayer {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  transition: top 0.5s ease;
+  top: 100%;
+}
+.searchCard:hover .searchLayer{
+  top: 0;
+}
+/* End search */
+.form-control::placeholder{
+  color: #929191;
+}
+.categoriesLayer {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  transition: top 0.5s ease;
+  top: 100%;
+}
+
+.categoriesCard:hover .categoriesLayer {
+  top: 0;
+}
